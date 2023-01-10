@@ -1,0 +1,11 @@
+FROM node:lts
+
+WORKDIR /app
+
+EXPOSE 4500
+
+RUN yarn add global nodemon
+
+RUN yarn install
+
+CMD ["npm", "run", "dev"]
